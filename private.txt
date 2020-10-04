@@ -1,0 +1,21 @@
+class A {
+    private func images() {}
+    fileprivate func videos() {}
+
+    func gallery() {
+        images()
+        videos()
+    }
+}
+
+extension A {
+    func test() {
+        videos() 
+              
+        images()
+    }
+}
+
+let a = A()
+a.videos() 
+a.images()
